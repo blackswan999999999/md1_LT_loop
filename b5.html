@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let k = 4;
+    let i = 1;
+    let n1 = 1;
+    let n2 = 1;
+    let n3;
+    let sum=20;
+    document.write('20 số đầu dãy số Finonacci : ' )
+    while (k <= 0) {
+        alert(' nhập số lớn hơn 0 đi ông :"( ')
+        k = parseInt(prompt('nhập vào số n :'))
+    }
+    while (i <= 20) {
+        console.log(' dãy số fibonacci: ', n1)
+        document.write(n1+'  ')
+        sum+=n1;
+        n3 = n1 + n2;
+        n1 = n2;
+        n2 = n3;
+        i++;
+
+    }
+    document.write('<br>'+'tổng 20 số đầu trong dãy fibonacci    '+ sum)
+</script>
+</html>

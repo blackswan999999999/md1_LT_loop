@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let k = +prompt('Hãy nhập nhiệt độ hiện tại ');
+
+    while (k > 100 || k < 23 || k <=100 && k>23) {
+        //biểu thức nằm trong || là riêng biệt, trong đó có thể chứa nhiều điều kiện khác
+        if (k >= 100) {
+            alert(' Xin hãy giảm nhiệt độ');
+            k = +prompt('Hãy nhập nhiệt độ hiện tại ');
+        } else if (k < 20) {
+            alert('xin hãy tăng nhiệt độ');
+            k = +prompt('Hãy nhập nhiệt độ hiện tại ');
+        } else {
+            alert(' Nhiệt độ đã ổn định');
+         break;
+        }
+    }
+
+
+</script>
+</html>

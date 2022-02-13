@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+let i=1;
+let k;
+document.write('Dãy số tự nhiên từ 1 ----> 100:   ');
+while(i<101){
+    let k=i;
+
+    if (i%3 ==0 && i%5==0){
+        k='fizzbuzz';
+        document.write('  <br>  '+k)
+    }else if (i%3 == 0){
+       k='fizz';
+        document.write('  <br>  '+k)
+    }  else if (i%5==0){
+        k='buzz';
+    } else {
+        document.write(' <br>  '+k)
+    }
+    i++;
+    console.log('i======',i);
+}
+
+</script>
+</html>

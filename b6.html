@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let i;
+    let count;
+    let sum=0;
+document.write(' Các số chia hết cho 7 là:      ')
+    //write1.   vì write() không xuống dòng nên khi in write2 sẽ thêm vào ngay sau write 1.
+    // Nếu không có gì đặc biệt thì lệnh thực thi từ trên xuống dưới
+
+    for (i=1,count=0,k=0;count<30;i++){
+        if(i%7==0){
+            k=i;
+            //gán k=i , mỗi vòng lặp k sẽ được gán giá trị mới
+            sum+=k;
+            //cộng các số chia hết cho 7 , sau mỗi vòng lặp giá trị của sum sẽ tăng lên ( sum =sum+k)
+            count++;
+            document.write(k+'  ')
+            // write2 dùng để in ra số chia hết cho 7
+            console.log('i=====',i);
+            console.log('count========',count)
+            console.log('sum===',sum);
+        }
+
+    }
+    document.write('<br>'+'Tổng các số chia hết cho 7 là '+sum)
+</script>
+</html>
